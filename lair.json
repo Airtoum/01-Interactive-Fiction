@@ -1,0 +1,620 @@
+{
+  "passages": [
+    {
+      "text": "This is it. The front gates to the Lair of the Evil Death Man Nonprofit Organization. It is your job to confront the Evil Death Man herself.\nIn your bag is a cane you acquired from an old man, a USB mouse you were given from a spooky skeleton, and an empty bucket. You used to have a magic ice cube but it melted.%give:CANE;%give:MOUSE;%give:BUCKET;\nWhat do you do?\n\n[[Kick open the door, being as loud as possible->Kick open the door]]\n[[Carefully peek in the door]]\n[[Whack with cane]]\n[[Plug in mouse->Outside Plug in mouse 1]]\n[[Wear bucket]]",
+      "links": [
+        {
+          "name": "Kick open the door, being as loud as possible",
+          "link": "Kick open the door",
+          "pid": "2"
+        },
+        {
+          "name": "Carefully peek in the door",
+          "link": "Carefully peek in the door",
+          "pid": "3"
+        },
+        {
+          "name": "Whack with cane",
+          "link": "Whack with cane",
+          "pid": "4"
+        },
+        {
+          "name": "Plug in mouse",
+          "link": "Outside Plug in mouse 1",
+          "pid": "5"
+        },
+        {
+          "name": "Wear bucket",
+          "link": "Wear bucket",
+          "pid": "6"
+        }
+      ],
+      "name": "Front Gates",
+      "pid": "1",
+      "position": {
+        "x": "739",
+        "y": "110"
+      }
+    },
+    {
+      "text": "You kick open the door!\n\nInside is a carefully balanced tower of chairs, and a person standing next to it. The person is startled by your entrance. The person is presumably the one who built the tower of chairs. The elevator is at the other end of the room.\n\nIt looks like you have a few moments while the Chair Tower Maker is stunned.\n\n[[Run past him into the elevator->Elevator]]\n[[Destroy the tower of chairs]]\n[[Fight the Chair Tower Maker]]\n[[Wait->Room 1 Kick Wait]]",
+      "links": [
+        {
+          "name": "Run past him into the elevator",
+          "link": "Elevator",
+          "pid": "26"
+        },
+        {
+          "name": "Destroy the tower of chairs",
+          "link": "Destroy the tower of chairs",
+          "pid": "7"
+        },
+        {
+          "name": "Fight the Chair Tower Maker",
+          "link": "Fight the Chair Tower Maker",
+          "pid": "8"
+        },
+        {
+          "name": "Wait",
+          "link": "Room 1 Kick Wait",
+          "pid": "9"
+        }
+      ],
+      "name": "Kick open the door",
+      "pid": "2",
+      "position": {
+        "x": "340",
+        "y": "285"
+      }
+    },
+    {
+      "text": "You open the door a teensy bit, and take a peek inside.\n\nThere is a tower of chairs, and a person right next to it. The person is grabbing another chair to add to the tower. At the other end of the room is an elevator to the rest of the evil lair.\n\n[[Sneak past]]\n[[Throw a rock]]\n[[Talk->Room 1 Talk]]",
+      "links": [
+        {
+          "name": "Sneak past",
+          "link": "Sneak past",
+          "pid": "10"
+        },
+        {
+          "name": "Throw a rock",
+          "link": "Throw a rock",
+          "pid": "11"
+        },
+        {
+          "name": "Talk",
+          "link": "Room 1 Talk",
+          "pid": "12"
+        }
+      ],
+      "name": "Carefully peek in the door",
+      "pid": "3",
+      "position": {
+        "x": "694",
+        "y": "283"
+      }
+    },
+    {
+      "text": "You whack the door with your cane.\n\nA few moments later, a person opens the door.\n\"Hello?\"\n\n[[\"Hi, I'm selling this here cane\"->\"Hi, I'm selling this here\"]]\n[[\"Hi, I'm selling this here mouse\"->\"Hi, I'm selling this here\"]]\n[[%need:BUCKET;\"Hi, I'm selling this here bucket\"->\"Hi, I'm selling this here\"]]\n[[\"Hi, I'm selling my bones\"]]\n[[\"Hi, I'm here to confront the Evil Death Man\"]]",
+      "links": [
+        {
+          "name": "\"Hi, I'm selling this here cane\"",
+          "link": "\"Hi, I'm selling this here\"",
+          "pid": "13"
+        },
+        {
+          "name": "\"Hi, I'm selling this here mouse\"",
+          "link": "\"Hi, I'm selling this here\"",
+          "pid": "13"
+        },
+        {
+          "name": "%need:BUCKET;\"Hi, I'm selling this here bucket\"",
+          "link": "\"Hi, I'm selling this here\"",
+          "pid": "13"
+        },
+        {
+          "name": "\"Hi, I'm selling my bones\"",
+          "link": "\"Hi, I'm selling my bones\"",
+          "pid": "14"
+        },
+        {
+          "name": "\"Hi, I'm here to confront the Evil Death Man\"",
+          "link": "\"Hi, I'm here to confront the Evil Death Man\"",
+          "pid": "15"
+        }
+      ],
+      "name": "Whack with cane",
+      "pid": "4",
+      "position": {
+        "x": "900",
+        "y": "288"
+      }
+    },
+    {
+      "text": "You try to plug the mouse into the door.\n\n???\n\n[[Kick open the door, being as loud as possible->Kick open the door]]\n[[Carefully peek in the door]]\n[[Whack with cane]]\n[[Plug in mouse->Outside Plug in mouse 2]]\n[[%need:BUCKET;Wear bucket->Wear bucket]]",
+      "links": [
+        {
+          "name": "Kick open the door, being as loud as possible",
+          "link": "Kick open the door",
+          "pid": "2"
+        },
+        {
+          "name": "Carefully peek in the door",
+          "link": "Carefully peek in the door",
+          "pid": "3"
+        },
+        {
+          "name": "Whack with cane",
+          "link": "Whack with cane",
+          "pid": "4"
+        },
+        {
+          "name": "Plug in mouse",
+          "link": "Outside Plug in mouse 2",
+          "pid": "16"
+        },
+        {
+          "name": "%need:BUCKET;Wear bucket",
+          "link": "Wear bucket",
+          "pid": "6"
+        }
+      ],
+      "name": "Outside Plug in mouse 1",
+      "pid": "5",
+      "position": {
+        "x": "1048.6666666666667",
+        "y": "103.33333333333333"
+      }
+    },
+    {
+      "text": "You put on your stylish headwear. %remove:BUCKET;%give:BUCKETHEAD;\n\n[[Kick open the door, being as loud as possible->Kick open the door]]\n[[Carefully peek in the door]]\n[[Whack with cane]]\n[[Plug in mouse->Outside Plug in mouse 1]]",
+      "links": [
+        {
+          "name": "Kick open the door, being as loud as possible",
+          "link": "Kick open the door",
+          "pid": "2"
+        },
+        {
+          "name": "Carefully peek in the door",
+          "link": "Carefully peek in the door",
+          "pid": "3"
+        },
+        {
+          "name": "Whack with cane",
+          "link": "Whack with cane",
+          "pid": "4"
+        },
+        {
+          "name": "Plug in mouse",
+          "link": "Outside Plug in mouse 1",
+          "pid": "5"
+        }
+      ],
+      "name": "Wear bucket",
+      "pid": "6",
+      "position": {
+        "x": "890.6666666666666",
+        "y": "50"
+      }
+    },
+    {
+      "text": "You knock over the tower of chairs! It crashes into the ground.\nThe Chair Tower Maker is not pleased.\nThe Chair Tower Maker begins screaming, bawling, making sounds that aren't even words at the absolute top of his lungs.\nHe charges at you.\nThere is nothing you can do.\nYou are bashed and punched into a pulp.\nYou are dead.\n\nGAME OVER",
+      "name": "Destroy the tower of chairs",
+      "pid": "7",
+      "position": {
+        "x": "65",
+        "y": "440"
+      }
+    },
+    {
+      "text": "You charge at the Chair Tower Maker, but he realizes what's happening and grabs a chair. \nHe hits you with the chair a bunch.\n\n...\n\nYou wake up in a hospital bed. You look down at your body to see that your body is now very elderly. A doctor comes in after a few minutes. As soon as they see you, they get excited.\n\"Oh my goodness! You're awake!\"\n\"How... how long-\"\n\"You've been in a coma for 75 years!\"\nYou then die from old age.\n\nGAME OVER",
+      "name": "Fight the Chair Tower Maker",
+      "pid": "8",
+      "position": {
+        "x": "195",
+        "y": "447"
+      }
+    },
+    {
+      "text": "\"Can I... help you?\" the Chair Tower Maker says.\n\n[[\"Hello, I would like to pass\"]]\n[[\"You smell like month-old rotting cheese\"]]\n[[\"Nice tower of chairs\"]]\n[[\"Nice shirt\"]]\n[[\"Nice weather\"]]",
+      "links": [
+        {
+          "name": "\"Hello, I would like to pass\"",
+          "link": "\"Hello, I would like to pass\"",
+          "pid": "21"
+        },
+        {
+          "name": "\"You smell like month-old rotting cheese\"",
+          "link": "\"You smell like month-old rotting cheese\"",
+          "pid": "22"
+        },
+        {
+          "name": "\"Nice tower of chairs\"",
+          "link": "\"Nice tower of chairs\"",
+          "pid": "23"
+        },
+        {
+          "name": "\"Nice shirt\"",
+          "link": "\"Nice shirt\"",
+          "pid": "24"
+        },
+        {
+          "name": "\"Nice weather\"",
+          "link": "\"Nice weather\"",
+          "pid": "25"
+        }
+      ],
+      "name": "Room 1 Kick Wait",
+      "pid": "9",
+      "position": {
+        "x": "316",
+        "y": "443"
+      }
+    },
+    {
+      "text": "You hide behind various chairs in the room.\nJust as you're about to reach the elevator, the Chair Tower Maker spots you, gets really startled, and bumps the tower of chairs.\nThe tower of chairs falls over and crushes you.\nThe last thing you hear is the unearthly wail of the Chair Tower Maker.\n\nGAME OVER",
+      "name": "Sneak past",
+      "pid": "10",
+      "position": {
+        "x": "570",
+        "y": "426"
+      }
+    },
+    {
+      "text": "You throw a rock to distract the Chair Tower Maker, but you didn't pay much attention to where you were throwing it.\n\nOh no.\n\nThe Chair Tower Maker just straight-up kills you.\n\nGAME OVER",
+      "name": "Throw a rock",
+      "pid": "11",
+      "position": {
+        "x": "694",
+        "y": "433"
+      }
+    },
+    {
+      "text": "You approach the Chair Tower Maker.\n\n[[\"Hello, I would like to pass\"]]\n[[\"You smell like month-old rotting cheese\"]]\n[[\"Nice tower of chairs\"]]\n[[\"Nice shirt\"]]\n[[\"Nice weather\"]]",
+      "links": [
+        {
+          "name": "\"Hello, I would like to pass\"",
+          "link": "\"Hello, I would like to pass\"",
+          "pid": "21"
+        },
+        {
+          "name": "\"You smell like month-old rotting cheese\"",
+          "link": "\"You smell like month-old rotting cheese\"",
+          "pid": "22"
+        },
+        {
+          "name": "\"Nice tower of chairs\"",
+          "link": "\"Nice tower of chairs\"",
+          "pid": "23"
+        },
+        {
+          "name": "\"Nice shirt\"",
+          "link": "\"Nice shirt\"",
+          "pid": "24"
+        },
+        {
+          "name": "\"Nice weather\"",
+          "link": "\"Nice weather\"",
+          "pid": "25"
+        }
+      ],
+      "name": "Room 1 Talk",
+      "pid": "12",
+      "position": {
+        "x": "844",
+        "y": "433"
+      }
+    },
+    {
+      "text": "\"Hi, I'm selling this here-\"\n\"No thanks.\"\nThe person closes the door. They lock it. Now what are you going to do?\n\nYou go home and enjoy a bowl of noodles.\nMaybe someone else will confront the Evil Death Man.\n\nTHE END",
+      "name": "\"Hi, I'm selling this here\"",
+      "pid": "13",
+      "position": {
+        "x": "1224",
+        "y": "435"
+      }
+    },
+    {
+      "text": "\"Hi, I'm selling my bones.\"\n\nThe person doesn't know what to say.\n\n[[Walk in->Room 1 Bone Seller]]\n[[Sell them your bones]]",
+      "links": [
+        {
+          "name": "Walk in",
+          "link": "Room 1 Bone Seller",
+          "pid": "17"
+        },
+        {
+          "name": "Sell them your bones",
+          "link": "Sell them your bones",
+          "pid": "18"
+        }
+      ],
+      "name": "\"Hi, I'm selling my bones\"",
+      "pid": "14",
+      "position": {
+        "x": "1384",
+        "y": "436"
+      }
+    },
+    {
+      "text": "\"Oh, sure. Come right on in.\"\nYou come right on in.\nIn the middle of the room is a tower of carefully balanced chairs. You guess that the person was the one who built it.\n\"Do you have an appointment?\" the Chair Tower Maker says.\n\n[[Yes->Room 1 I have an appointment]]\n[[No->Room 1 I do not have an appointment]]",
+      "links": [
+        {
+          "name": "Yes",
+          "link": "Room 1 I have an appointment",
+          "pid": "19"
+        },
+        {
+          "name": "No",
+          "link": "Room 1 I do not have an appointment",
+          "pid": "20"
+        }
+      ],
+      "name": "\"Hi, I'm here to confront the Evil Death Man\"",
+      "pid": "15",
+      "position": {
+        "x": "1505",
+        "y": "433"
+      }
+    },
+    {
+      "text": "You try to plug the mouse into the door... again.\n\nY'know what?\n\nI'm gonna confiscate that mouse. That's right no more mouse for you. Rest of the entire game.\n\n[[Kick open the door, being as loud as possible->Kick open the door]]\n[[Carefully peek in the door]]\n[[Whack with cane]]\n[[%need:BUCKET;Wear bucket->Wear bucket]]",
+      "links": [
+        {
+          "name": "Kick open the door, being as loud as possible",
+          "link": "Kick open the door",
+          "pid": "2"
+        },
+        {
+          "name": "Carefully peek in the door",
+          "link": "Carefully peek in the door",
+          "pid": "3"
+        },
+        {
+          "name": "Whack with cane",
+          "link": "Whack with cane",
+          "pid": "4"
+        },
+        {
+          "name": "%need:BUCKET;Wear bucket",
+          "link": "Wear bucket",
+          "pid": "6"
+        }
+      ],
+      "name": "Outside Plug in mouse 2",
+      "pid": "16",
+      "position": {
+        "x": "1189",
+        "y": "96.33333333333333"
+      }
+    },
+    {
+      "text": "You walk into the room.\nThere's a tower of chairs in the middle of it. At the other end of the room is an elevator.\nYou look back at the person. They're still wigged out.\nYou use this as an opportunity to go to the elevator.\n\n[[Next->Elevator]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Elevator",
+          "pid": "26"
+        }
+      ],
+      "name": "Room 1 Bone Seller",
+      "pid": "17",
+      "position": {
+        "x": "1312",
+        "y": "588"
+      }
+    },
+    {
+      "text": "You sell them your bones. One one hand, you are dead. On the other hand... 3,500 bucks is 3,500 bucks.\n\nGAME OVER",
+      "name": "Sell them your bones",
+      "pid": "18",
+      "position": {
+        "x": "1459",
+        "y": "586"
+      }
+    },
+    {
+      "text": "\"Yes,\" you say.\n\"Cool. Just step in that elevator and head up a bit.\"\n\n[[\"Thanks.\"->Elevator]]",
+      "links": [
+        {
+          "name": "\"Thanks.\"",
+          "link": "Elevator",
+          "pid": "26"
+        }
+      ],
+      "name": "Room 1 I have an appointment",
+      "pid": "19",
+      "position": {
+        "x": "1580",
+        "y": "593"
+      }
+    },
+    {
+      "text": "\"No,\" you say.\n\"That's probably fine. You might have to wait a bit to see her. Just go in the elevator and go up a bit.\"\n\n[[\"Thanks.\"->Elevator]]",
+      "links": [
+        {
+          "name": "\"Thanks.\"",
+          "link": "Elevator",
+          "pid": "26"
+        }
+      ],
+      "name": "Room 1 I do not have an appointment",
+      "pid": "20",
+      "position": {
+        "x": "1712",
+        "y": "590"
+      }
+    },
+    {
+      "text": "\"Okay.\" He lets you pass.\n\n[[Enter the elevator->Elevator]]",
+      "links": [
+        {
+          "name": "Enter the elevator",
+          "link": "Elevator",
+          "pid": "26"
+        }
+      ],
+      "name": "\"Hello, I would like to pass\"",
+      "pid": "21",
+      "position": {
+        "x": "510",
+        "y": "645"
+      }
+    },
+    {
+      "text": "\"Do I really smell that bad?\" The Chair Tower Maker smells himself. \"That was really rude.\"\n\n[[Go to the elevator->Elevator]]\n[[\"Your teeth are bad. Not in appearance, but like, morally\"]]",
+      "links": [
+        {
+          "name": "Go to the elevator",
+          "link": "Elevator",
+          "pid": "26"
+        },
+        {
+          "name": "\"Your teeth are bad. Not in appearance, but like, morally\"",
+          "link": "\"Your teeth are bad. Not in appearance, but like, morally\"",
+          "pid": "27"
+        }
+      ],
+      "name": "\"You smell like month-old rotting cheese\"",
+      "pid": "22",
+      "position": {
+        "x": "695",
+        "y": "585"
+      }
+    },
+    {
+      "text": "\"Thanks! This is the highest I've ever gotten it, and I am extremely proud of it.\"\nThe two of you carry on a friendly conversation.\n\"Well, good luck with your tower of chairs!\"\n\"Thank you! Good luck on confronting the Evil Death Man! Just go up a bit.\"\n\n[[Next->Elevator]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Elevator",
+          "pid": "26"
+        }
+      ],
+      "name": "\"Nice tower of chairs\"",
+      "pid": "23",
+      "position": {
+        "x": "844",
+        "y": "583"
+      }
+    },
+    {
+      "text": "The Chair Tower Maker looks confused. \"I'm not wearing a shirt.\"\nYou are confused. He is clearly wearing a shirt.\n\n[[Leave->Elevator]]\n[[...->Room 1 shirts]]",
+      "links": [
+        {
+          "name": "Leave",
+          "link": "Elevator",
+          "pid": "26"
+        },
+        {
+          "name": "...",
+          "link": "Room 1 shirts",
+          "pid": "29"
+        }
+      ],
+      "name": "\"Nice shirt\"",
+      "pid": "24",
+      "position": {
+        "x": "994",
+        "y": "583"
+      }
+    },
+    {
+      "text": "\"Thanks! I made it myself.\"\n\n[[Next->Elevator]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Elevator",
+          "pid": "26"
+        }
+      ],
+      "name": "\"Nice weather\"",
+      "pid": "25",
+      "position": {
+        "x": "1144",
+        "y": "581"
+      }
+    },
+    {
+      "text": "You are in the elavator.\n\nThere are two buttons. Which do you press?\n\n[[A little bit up]]\n[[A whole lot up]]",
+      "links": [
+        {
+          "name": "A little bit up",
+          "link": "A little bit up",
+          "pid": "30"
+        },
+        {
+          "name": "A whole lot up",
+          "link": "A whole lot up",
+          "pid": "31"
+        }
+      ],
+      "name": "Elevator",
+      "pid": "26",
+      "position": {
+        "x": "681",
+        "y": "820"
+      }
+    },
+    {
+      "text": "\"Aauuugh! Why did you have to say that! Now I'm going to be self-conscious about my teeth's maliciousness every time I smile!\"\n\n[[Go to the elevator->Elevator]]\n[[\"Your tower of chairs is cruddy\"]]",
+      "links": [
+        {
+          "name": "Go to the elevator",
+          "link": "Elevator",
+          "pid": "26"
+        },
+        {
+          "name": "\"Your tower of chairs is cruddy\"",
+          "link": "\"Your tower of chairs is cruddy\"",
+          "pid": "28"
+        }
+      ],
+      "name": "\"Your teeth are bad. Not in appearance, but like, morally\"",
+      "pid": "27",
+      "position": {
+        "x": "207",
+        "y": "670"
+      }
+    },
+    {
+      "text": "You are dead.\n\nGAME OVER",
+      "name": "\"Your tower of chairs is cruddy\"",
+      "pid": "28",
+      "position": {
+        "x": "195",
+        "y": "803"
+      }
+    },
+    {
+      "text": "uh...\n\nSuddenly, the ceiling crumbles and crushes the both of you!\n\nGAME OVER",
+      "name": "Room 1 shirts",
+      "pid": "29",
+      "position": {
+        "x": "994",
+        "y": "733"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "A little bit up",
+      "pid": "30",
+      "position": {
+        "x": "606",
+        "y": "970"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "A whole lot up",
+      "pid": "31",
+      "position": {
+        "x": "756",
+        "y": "970"
+      }
+    }
+  ],
+  "name": "01 Interactive Fiction",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.12",
+  "ifid": "B56756B1-1267-4ACC-91DA-B1B7DACF4826"
+}
