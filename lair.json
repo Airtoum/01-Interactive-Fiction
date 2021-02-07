@@ -37,7 +37,7 @@
       }
     },
     {
-      "text": "You kick open the door!\n\nInside is a carefully balanced tower of chairs, and a person standing next to it. The person is startled by your entrance. The person is presumably the one who built the tower of chairs. The elevator is at the other end of the room.\n\nIt looks like you have a few moments while the Chair Tower Maker is stunned.\n\n[[Run past him into the elevator->Elevator]]\n[[Destroy the tower of chairs]]\n[[Fight the Chair Tower Maker]]\n[[Wait->Room 1 Kick Wait]]",
+      "text": "You kick open the door!\n\nInside is a carefully balanced tower of chairs, and a person standing next to it. The person is startled by your entrance. The person is presumably the one who built the tower of chairs. The elevator is at the other end of the room.\n\nIt looks like you have a few moments while the Chair Tower Maker is stunned.\n\n[[Run past him into the elevator->Elevator]]\n[[Destroy the tower of chairs]]\n[[%prohibit:BUCKETHEAD;Fight the Chair Tower Maker->Fight the Chair Tower Maker]]\n[[%need:BUCKETHEAD;Fight the Chair Tower Maker->Fight the Chair Tower Maker Armor]]\n[[Wait->Room 1 Kick Wait]]",
       "links": [
         {
           "name": "Run past him into the elevator",
@@ -50,9 +50,14 @@
           "pid": "7"
         },
         {
-          "name": "Fight the Chair Tower Maker",
+          "name": "%prohibit:BUCKETHEAD;Fight the Chair Tower Maker",
           "link": "Fight the Chair Tower Maker",
           "pid": "8"
+        },
+        {
+          "name": "%need:BUCKETHEAD;Fight the Chair Tower Maker",
+          "link": "Fight the Chair Tower Maker Armor",
+          "pid": "32"
         },
         {
           "name": "Wait",
@@ -64,7 +69,7 @@
       "pid": "2",
       "position": {
         "x": "340",
-        "y": "285"
+        "y": "283.3333333333333"
       }
     },
     {
@@ -201,8 +206,8 @@
       "name": "Destroy the tower of chairs",
       "pid": "7",
       "position": {
-        "x": "65",
-        "y": "440"
+        "x": "49.99999999999999",
+        "y": "433.3333333333333"
       }
     },
     {
@@ -210,8 +215,8 @@
       "name": "Fight the Chair Tower Maker",
       "pid": "8",
       "position": {
-        "x": "195",
-        "y": "447"
+        "x": "168.33333333333331",
+        "y": "435.3333333333333"
       }
     },
     {
@@ -246,8 +251,8 @@
       "name": "Room 1 Kick Wait",
       "pid": "9",
       "position": {
-        "x": "316",
-        "y": "443"
+        "x": "394.33333333333337",
+        "y": "441.3333333333333"
       }
     },
     {
@@ -594,7 +599,14 @@
       }
     },
     {
-      "text": "Double-click this passage to edit it.",
+      "text": "The elevator begins moving up. About two seconds pass before it stops.\nThe back of the elevator opens to another room. The room is fairly spacious, dimly lit, and fairly clean. The walls are made from a very deep, dark wood. The floor is a white tile. There are cabinets, filing cabinets, and drawers around the edges of the room. In the very middle is a massive desk, with a nameplate \"Evil Death Man\" resting neatly on the edge. Behind the desk is a leather chair, facing away from you.\n\nThe leather chair spins around, and, on it, the Evil Death Man glares at you. Her gaze is almost enough to make your legs give way beneath you.\n\n[[Confront the Evil Death Man]]",
+      "links": [
+        {
+          "name": "Confront the Evil Death Man",
+          "link": "Confront the Evil Death Man",
+          "pid": "74"
+        }
+      ],
       "name": "A little bit up",
       "pid": "30",
       "position": {
@@ -603,18 +615,2841 @@
       }
     },
     {
-      "text": "Double-click this passage to edit it.",
+      "text": "The elevator begins accelerating upwards. You feel pressed into the ground more and more. You didn't realize just how high up this button brought you. Eventually, you're unable to stand, and crash onto the floor.\n\nAfter a few minutes, the elevator finally starts decelerating. How high did you go? You're terrified to find out.\n\nThe doors slide open. Outside is a huge green room. As you take a step into it, your foot sinks a little bit. The entire room is covered in moss. There is a door at the other end of the room, but the door is raised 5 meters off the ground.\n\nDangling above you is a key suspended by a rope. The key is just out of reach. To your right is a machine labeled \"The Homonymifier.\" Next to it is a ribbon, and a sign with an arrow pointing at the door.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
       "name": "A whole lot up",
       "pid": "31",
       "position": {
         "x": "756",
-        "y": "970"
+        "y": "968.3333333333334"
+      }
+    },
+    {
+      "text": "You charge at the Chair Tower Maker, but he realizes what's happening and grabs a chair.\nHe tries to hit you with the chair, but the bucket on your head protects you! You pull out the cane and defeat the Chair Tower Maker.\n%give:CHAIR;\nYou take his chair.\n\n[[Go to the elevator.->Elevator]]",
+      "links": [
+        {
+          "name": "Go to the elevator.",
+          "link": "Elevator",
+          "pid": "26"
+        }
+      ],
+      "name": "Fight the Chair Tower Maker Armor",
+      "pid": "32",
+      "position": {
+        "x": "285",
+        "y": "438"
+      }
+    },
+    {
+      "text": "You jump at the key, but alas, it's just out of reach.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Jump at key",
+      "pid": "33",
+      "position": {
+        "x": "767.6666666666666",
+        "y": "1183.3333333333333"
+      }
+    },
+    {
+      "text": "You jump at the rope. But alas, it is just out of reach.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Jump at rope",
+      "pid": "34",
+      "position": {
+        "x": "948.3333333333334",
+        "y": "1194.9999999999998"
+      }
+    },
+    {
+      "text": "You whack the key with your cane! It falls down, and you pick it up. Nice!%give:KEY;\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Whack key with cane",
+      "pid": "35",
+      "position": {
+        "x": "772.6666666666667",
+        "y": "1296.6666666666667"
+      }
+    },
+    {
+      "text": "You swing the mouse at the door. The mouse cord isn't long enough to reach it.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Swing mouse at door",
+      "pid": "36",
+      "position": {
+        "x": "1295",
+        "y": "1225.0000000000002"
+      }
+    },
+    {
+      "text": "You throw the ribbon at the door! The ribbon is very hard to throw like rope since it's so light. The air resistance makes it stop moving, and it floats back down to you. It's okay, the ribbon didn't look long enough anyway.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Throw ribbon at door",
+      "pid": "37",
+      "position": {
+        "x": "1296.6666666666667",
+        "y": "1350.0000000000002"
+      }
+    },
+    {
+      "text": "You swing the mouse + ribbon combo at the door! The mass of the mouse allows you to effectively swing the ribbon! The mouse ALMOST reaches the door, but it is STILL too short. It is very close, though.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Swing mouse tied to ribbon at door",
+      "pid": "38",
+      "position": {
+        "x": "1296.6666666666667",
+        "y": "1468.3333333333335"
+      }
+    },
+    {
+      "text": "You're at The Homonymifier. What are you going to do?\n\n[[%need:MOUSE;Insert USB mouse->Insert USB mouse]]\n[[%need:RODENT_MOUSE;Shove in the rodent mouse->Shove in the rodent mouse]]\n[[%need:CANE;Put in cane->Put in cane]]\n[[%need:SUGAR_CANE;Put in sugar cane->Put in sugar cane]]\n[[%need:RIBBON;Place the ribbon in it->Place the ribbon in it]]\n[[%need:RIBBON_BOW;Use it on the ribbon tied into a bow->Use it on the ribbon tied into a bow]]\n[[%need:BOW;Squeeze the bow into it->Squeeze the bow into it]]\n[[%need:SIGN;Insert the sign->Insert the sign]]\n[[%need:ARROW;Put in arrow->Put in arrow]]\n[[%need:CHAIR;Shove in the chair->Shove in the chair]]\n[[%need:BUCKET;Feed it the bucket->Feed it the bucket]]\n[[%need:RIBBON;Tie the ribbon into a bow->Tie the ribbon into a bow]]\n[[%need:ROPE;Spend two minutes putting the entire rope in->Put in rope]]\n[[%need:KEY;Put the key in it->Put the key in it]]\n[[%need:8_KEY;Put in the 8 Key->Put in the 8 key]]\n[[%need:8_KEY;Press the 8 key->Press the 8 key]]\n[[Leave The Homonymifier->Moss Room]]",
+      "links": [
+        {
+          "name": "%need:MOUSE;Insert USB mouse",
+          "link": "Insert USB mouse",
+          "pid": "57"
+        },
+        {
+          "name": "%need:RODENT_MOUSE;Shove in the rodent mouse",
+          "link": "Shove in the rodent mouse",
+          "pid": "58"
+        },
+        {
+          "name": "%need:CANE;Put in cane",
+          "link": "Put in cane",
+          "pid": "59"
+        },
+        {
+          "name": "%need:SUGAR_CANE;Put in sugar cane",
+          "link": "Put in sugar cane",
+          "pid": "60"
+        },
+        {
+          "name": "%need:RIBBON;Place the ribbon in it",
+          "link": "Place the ribbon in it",
+          "pid": "61"
+        },
+        {
+          "name": "%need:RIBBON_BOW;Use it on the ribbon tied into a bow",
+          "link": "Use it on the ribbon tied into a bow",
+          "pid": "62"
+        },
+        {
+          "name": "%need:BOW;Squeeze the bow into it",
+          "link": "Squeeze the bow into it",
+          "pid": "63"
+        },
+        {
+          "name": "%need:SIGN;Insert the sign",
+          "link": "Insert the sign",
+          "pid": "64"
+        },
+        {
+          "name": "%need:ARROW;Put in arrow",
+          "link": "Put in arrow",
+          "pid": "65"
+        },
+        {
+          "name": "%need:CHAIR;Shove in the chair",
+          "link": "Shove in the chair",
+          "pid": "66"
+        },
+        {
+          "name": "%need:BUCKET;Feed it the bucket",
+          "link": "Feed it the bucket",
+          "pid": "67"
+        },
+        {
+          "name": "%need:RIBBON;Tie the ribbon into a bow",
+          "link": "Tie the ribbon into a bow",
+          "pid": "68"
+        },
+        {
+          "name": "%need:ROPE;Spend two minutes putting the entire rope in",
+          "link": "Put in rope",
+          "pid": "69"
+        },
+        {
+          "name": "%need:KEY;Put the key in it",
+          "link": "Put the key in it",
+          "pid": "70"
+        },
+        {
+          "name": "%need:8_KEY;Put in the 8 Key",
+          "link": "Put in the 8 key",
+          "pid": "71"
+        },
+        {
+          "name": "%need:8_KEY;Press the 8 key",
+          "link": "Press the 8 key",
+          "pid": "72"
+        },
+        {
+          "name": "Leave The Homonymifier",
+          "link": "Moss Room",
+          "pid": "56"
+        }
+      ],
+      "name": "Go to The Homonymifier",
+      "pid": "39",
+      "position": {
+        "x": "1771.0000000000005",
+        "y": "1233.3333333333335"
+      }
+    },
+    {
+      "text": "You pick up the ribbon.%give:RIBBON;\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Pick up ribbon",
+      "pid": "40",
+      "position": {
+        "x": "1837.6666666666667",
+        "y": "1113.3333333333333"
+      }
+    },
+    {
+      "text": "You pick up the sign. It's not even firmly rooted into the ground. It was just sitting there.%give:SIGN;\nThe arrow on it is a nice reddish magenta.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Pick up sign",
+      "pid": "41",
+      "position": {
+        "x": "1969.3333333333335",
+        "y": "1116.6666666666667"
+      }
+    },
+    {
+      "text": "You throw the rope at the door! The end of the rope flies into the doorway! Yes! You excitedly try climbing the rope, but there's nothing to anchor it at the other end, and the rope just slides back out of the doorframe. From the looks of it, the bottom of the doorframe isn't actually flush with the floor behind it, making a sizeable board that the rope dissappeared behind. Maybe that was put there so wheeled carts wouldn't go carreening out of the doorway.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Throw rope at door",
+      "pid": "42",
+      "position": {
+        "x": "1299.3333333333335",
+        "y": "1586.6666666666667"
+      }
+    },
+    {
+      "text": "You throw the rope-mouse combo at the door! The mouse gets stuck behind the doorframe, locking it in place. Are you ready to leave?\n\n[[Yes->Ladder]]\n[[No->Moss Room]]",
+      "links": [
+        {
+          "name": "Yes",
+          "link": "Ladder",
+          "pid": "55"
+        },
+        {
+          "name": "No",
+          "link": "Moss Room",
+          "pid": "56"
+        }
+      ],
+      "name": "Throw the rope tied to the mouse at the door",
+      "pid": "43",
+      "position": {
+        "x": "1429.3333333333335",
+        "y": "1550.0000000000002"
+      }
+    },
+    {
+      "text": "You go back in the elevator, and go down. The elevator begins accelerating downwards. You feel yourself getting lighter and lighter. Eventually your feet leave the ground, and you are brought to the ceiling of the room.\n\nA few minutes pass and the elevator begins decellerating. You feel yourself becoming lighter in terms of anti-gravity, then weightless again, and back on the floor. The elevator finally returns to a stop.\n\nA light turns on in the panel of buttons. The elevator is stuck. Oh no. How long will it be stuck for? There isn't an emergency button.\n\n...\n\nYou rot.\n\nGAME OVER",
+      "name": "Go back in the elevator and head back down",
+      "pid": "44",
+      "position": {
+        "x": "1597.666666666667",
+        "y": "948.3333333333333"
+      }
+    },
+    {
+      "text": "You rot.\n\nGAME OVER",
+      "name": "Rot",
+      "pid": "45",
+      "position": {
+        "x": "1601",
+        "y": "836.6666666666669"
+      }
+    },
+    {
+      "text": "You put the chair beneath the key, and then stand on the chair. You can now reach the key! You grab the key.%give:KEY;\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Jump at key while standing on chair",
+      "pid": "46",
+      "position": {
+        "x": "776",
+        "y": "1413.3333333333333"
+      }
+    },
+    {
+      "text": "You set the chair beneath the rope, and stand on it in order to reach the rope. You grab onto the rope! You climb up to the top of the room, but it doesn't look like there's a knot to untie. The rope just goes into the ceiling. Also, if there were a knot you could untie, you would fall quite a distance if you did. Maybe the moss would cushion your fall. Maybe you'd smash your head into the chair.\nYou slide back down the rope.\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Jump at rope while standing on chair",
+      "pid": "47",
+      "position": {
+        "x": "946",
+        "y": "1300"
+      }
+    },
+    {
+      "text": "You stand on the chair, swing your ribbon-mouse combo, and it just barely reaches! The mouse gets stuck behind the doorframe, and you're able to climb up.\nAre you ready to leave?\n\n[[Yes->Ladder]]\n[[No->Moss Room]]",
+      "links": [
+        {
+          "name": "Yes",
+          "link": "Ladder",
+          "pid": "55"
+        },
+        {
+          "name": "No",
+          "link": "Moss Room",
+          "pid": "56"
+        }
+      ],
+      "name": "Swing mouse tied to ribbon at door with chair",
+      "pid": "48",
+      "position": {
+        "x": "1431.666666666667",
+        "y": "1436.6666666666667"
+      }
+    },
+    {
+      "text": "You put the chair beneath the doorway. It's not anywhere near close enough to reach the door, but it's a start.%remove:CHAIR;%give:CHAIR_UNDER_DOOR;\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Put the chair beneath the door",
+      "pid": "49",
+      "position": {
+        "x": "1434.3333333333335",
+        "y": "1180"
+      }
+    },
+    {
+      "text": "You attach the ribbon to the cord of the USB mouse.%remove:RIBBON;%remove:MOUSE;%give:MOUSE_RIBBON\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Tie ribbon to mouse cord",
+      "pid": "50",
+      "position": {
+        "x": "1181.0000000000002",
+        "y": "898.3333333333333"
+      }
+    },
+    {
+      "text": "You tie the rope firmly around the cord of the USB mouse.%remove:ROPE;%remove:MOUSE;%give:MOUSE_ROPE\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Tie rope to mouse cord",
+      "pid": "51",
+      "position": {
+        "x": "1322.6666666666667",
+        "y": "900"
+      }
+    },
+    {
+      "text": "You untie the ribbon from the mouse.%remove:MOUSE_RIBBON;%give:MOUSE;%give:RIBBON;\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Untie ribbon from mouse cord",
+      "pid": "52",
+      "position": {
+        "x": "1177.6666666666667",
+        "y": "1018.3333333333334"
+      }
+    },
+    {
+      "text": "You untie the rope from the mouse.%remove:MOUSE_ROPE;%give:MOUSE;%give:ROPE;\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Untie rope from mouse cord",
+      "pid": "53",
+      "position": {
+        "x": "1322.6666666666667",
+        "y": "1021.6666666666665"
+      }
+    },
+    {
+      "text": "You pick up the chair from beneath the doorway.%remove:CHAIR_UNDER_DOOR;%give:CHAIR;\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Pick up the chair again",
+      "pid": "54",
+      "position": {
+        "x": "1436",
+        "y": "1285"
+      }
+    },
+    {
+      "text": "You pick up the mouse and everything it's attached to, and put them all in your bag.\n\nThis room is very small. It's almost like a hallway, except it's length is very short. It's about the size of 3 closets. In the back of the room is a ladder going up.\n\n[[Climb up the ladder->Evil Death Man Room Ladder]]",
+      "links": [
+        {
+          "name": "Climb up the ladder",
+          "link": "Evil Death Man Room Ladder",
+          "pid": "73"
+        }
+      ],
+      "name": "Ladder",
+      "pid": "55",
+      "position": {
+        "x": "911.0000000000001",
+        "y": "1665.0000000000002"
+      }
+    },
+    {
+      "text": "What would you like to do?\n\n[[%prohibit:KEY;Jump at key->Jump at key]]\n[[%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair->Jump at key while standing on chair]]\n[[%need:KEY;%prohibit:ROPE;Jump at rope->Jump at rope]]\n[[%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair->Jump at rope while standing on chair]]\n[[%need:CANE;%prohibit:KEY;Whack key with cane->Whack key with cane]]\n[[%need:MOUSE;Swing mouse at door->Swing mouse at door]]\n[[%need:RIBBON;Throw ribbon at door->Throw ribbon at door]]\n[[%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door]]\n[[%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door->Swing mouse tied to ribbon at door with chair]]\n[[Go to The Homonymifier]]\n[[%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon->Pick up ribbon]]\n[[%prohibit:SIGN;%prohibit:ARROW;Pick up sign->Pick up sign]]\n[[%need:ROPE;Throw rope at door->Throw rope at door]]\n[[%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door->Throw the rope tied to the mouse at the door]]\n[[%need:CHAIR;Put the chair beneath the door->Put the chair beneath the door]]\n[[%need:CHAIR_UNDER_DOOR;Pick up the chair again->Pick up the chair again]]\n[[%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord->Tie ribbon to mouse cord]]\n[[%need:MOUSE;%need:ROPE;Tie rope to mouse cord->Tie rope to mouse cord]]\n[[%need:MOUSE_RIBBON;Untie ribbon from mouse cord->Untie ribbon from mouse cord]]\n[[%need:MOUSE_ROPE;Untie rope from mouse cord->Untie rope from mouse cord]]\n[[Go back in the elevator and head back down]]\n[[Rot]]",
+      "links": [
+        {
+          "name": "%prohibit:KEY;Jump at key",
+          "link": "Jump at key",
+          "pid": "33"
+        },
+        {
+          "name": "%prohibit:KEY;%need:CHAIR;Jump at key while standing on chair",
+          "link": "Jump at key while standing on chair",
+          "pid": "46"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;Jump at rope",
+          "link": "Jump at rope",
+          "pid": "34"
+        },
+        {
+          "name": "%need:KEY;%prohibit:ROPE;%need:CHAIR;Jump at rope while standing on chair",
+          "link": "Jump at rope while standing on chair",
+          "pid": "47"
+        },
+        {
+          "name": "%need:CANE;%prohibit:KEY;Whack key with cane",
+          "link": "Whack key with cane",
+          "pid": "35"
+        },
+        {
+          "name": "%need:MOUSE;Swing mouse at door",
+          "link": "Swing mouse at door",
+          "pid": "36"
+        },
+        {
+          "name": "%need:RIBBON;Throw ribbon at door",
+          "link": "Throw ribbon at door",
+          "pid": "37"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%prohibit:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door",
+          "pid": "38"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;%need:CHAIR_UNDER_DOOR;Swing mouse tied to ribbon at door",
+          "link": "Swing mouse tied to ribbon at door with chair",
+          "pid": "48"
+        },
+        {
+          "name": "Go to The Homonymifier",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        },
+        {
+          "name": "%prohibit:RIBBON;%prohibit:MOUSE_RIBBON;%prohibit:RIBBON_BOW;%prohibit:BOW;Pick up ribbon",
+          "link": "Pick up ribbon",
+          "pid": "40"
+        },
+        {
+          "name": "%prohibit:SIGN;%prohibit:ARROW;Pick up sign",
+          "link": "Pick up sign",
+          "pid": "41"
+        },
+        {
+          "name": "%need:ROPE;Throw rope at door",
+          "link": "Throw rope at door",
+          "pid": "42"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Throw the rope tied to the mouse at the door",
+          "link": "Throw the rope tied to the mouse at the door",
+          "pid": "43"
+        },
+        {
+          "name": "%need:CHAIR;Put the chair beneath the door",
+          "link": "Put the chair beneath the door",
+          "pid": "49"
+        },
+        {
+          "name": "%need:CHAIR_UNDER_DOOR;Pick up the chair again",
+          "link": "Pick up the chair again",
+          "pid": "54"
+        },
+        {
+          "name": "%need:MOUSE;%need:RIBBON;Tie ribbon to mouse cord",
+          "link": "Tie ribbon to mouse cord",
+          "pid": "50"
+        },
+        {
+          "name": "%need:MOUSE;%need:ROPE;Tie rope to mouse cord",
+          "link": "Tie rope to mouse cord",
+          "pid": "51"
+        },
+        {
+          "name": "%need:MOUSE_RIBBON;Untie ribbon from mouse cord",
+          "link": "Untie ribbon from mouse cord",
+          "pid": "52"
+        },
+        {
+          "name": "%need:MOUSE_ROPE;Untie rope from mouse cord",
+          "link": "Untie rope from mouse cord",
+          "pid": "53"
+        },
+        {
+          "name": "Go back in the elevator and head back down",
+          "link": "Go back in the elevator and head back down",
+          "pid": "44"
+        },
+        {
+          "name": "Rot",
+          "link": "Rot",
+          "pid": "45"
+        }
+      ],
+      "name": "Moss Room",
+      "pid": "56",
+      "position": {
+        "x": "1019.3333333333335",
+        "y": "1528.3333333333335"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "Insert USB mouse",
+      "pid": "57",
+      "position": {
+        "x": "1880.0000000000005",
+        "y": "1493.3333333333335"
+      }
+    },
+    {
+      "text": "The mouse tries to squirm out of your hands, but you manage to put it back in The Homonymifier. The mouse gets turned back into a USB mouse.%remove:RODENT_MOUSE;%give:MOUSE;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Shove in the rodent mouse",
+      "pid": "58",
+      "position": {
+        "x": "1983.3333333333337",
+        "y": "1488.3333333333335"
+      }
+    },
+    {
+      "text": "This cane has been with you for a very long time, it's almost a shame that it's about to be transformed. You gently place the cane into The Homonymifier, and watch as it gets transformed into sugar cane.%remove:CANE;%give:SUGAR_CANE;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Put in cane",
+      "pid": "59",
+      "position": {
+        "x": "2096.666666666667",
+        "y": "1486.666666666667"
+      }
+    },
+    {
+      "text": "You put in the sugar cane, and your cane is returned to you. But will it ever really be the same?%remove:SUGAR_CANE;%give:CANE;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Put in sugar cane",
+      "pid": "60",
+      "position": {
+        "x": "2211.0000000000005",
+        "y": "1486.666666666667"
+      }
+    },
+    {
+      "text": "You place the ribbon on the conveyor belt, but the ribbon comes out the other side unchanged.\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Place the ribbon in it",
+      "pid": "61",
+      "position": {
+        "x": "2336.0000000000005",
+        "y": "1485.0000000000002"
+      }
+    },
+    {
+      "text": "You use The Homonymifier on the ribbon tied into a bow, and the machine spits out a twangy shoot-stuff bow!%remove:RIBBON_BOW;%give:BOW;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Use it on the ribbon tied into a bow",
+      "pid": "62",
+      "position": {
+        "x": "2457.666666666667",
+        "y": "1478.3333333333335"
+      }
+    },
+    {
+      "text": "You squeeze the bow into the machine. The bow turns back into the ribbon tied into a bow.%remove:BOW;%give:RIBBON_BOW;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Squeeze the bow into it",
+      "pid": "63",
+      "position": {
+        "x": "2586.0000000000005",
+        "y": "1488.3333333333335"
+      }
+    },
+    {
+      "text": "You put the sign into The Homonymifier.\n\nIt outputs an arrow, like the projectile kind.%give:ARROW;%remove:SIGN;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Insert the sign",
+      "pid": "64",
+      "position": {
+        "x": "1655.0000000000005",
+        "y": "1373.3333333333335"
+      }
+    },
+    {
+      "text": "You put the arrow back into The Homonymifier. It gives you the sign again.%give:SIGN;%remove:ARROW;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Put in arrow",
+      "pid": "65",
+      "position": {
+        "x": "1751.666666666667",
+        "y": "1488.3333333333335"
+      }
+    },
+    {
+      "text": "You shove the chair into The Homonymifier. It gives you back a chair.\nHow productive.\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Shove in the chair",
+      "pid": "66",
+      "position": {
+        "x": "1780.0000000000002",
+        "y": "1371.666666666667"
+      }
+    },
+    {
+      "text": "You put in the bucket, but it doesn't do anything with it. The bucket ends up unchanged in the output spot.\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Feed it the bucket",
+      "pid": "67",
+      "position": {
+        "x": "1913.3333333333337",
+        "y": "1360.0000000000002"
+      }
+    },
+    {
+      "text": "You tie the ribbon into a bow! It looks really cute.%remove:RIBBON;%give:RIBBON_BOW;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Tie the ribbon into a bow",
+      "pid": "68",
+      "position": {
+        "x": "2052.666666666667",
+        "y": "1360.0000000000002"
+      }
+    },
+    {
+      "text": "You put the rope in, but The Homonymifier doesn't do anything to it.\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Put in rope",
+      "pid": "69",
+      "position": {
+        "x": "2173.333333333334",
+        "y": "1353.3333333333335"
+      }
+    },
+    {
+      "text": "You put the key in it. The Homonymifier transforms it into the \"8\" key from a keyboard. I really don't like the 8 key, you should probably turn it back into a key immediately.%remove:KEY;%give:8_KEY;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Put the key in it",
+      "pid": "70",
+      "position": {
+        "x": "2304.333333333334",
+        "y": "1355"
+      }
+    },
+    {
+      "text": "You put in the 8 key, and the lock-opening key comes back out.%remove:8_KEY;%give:KEY;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Put in the 8 key",
+      "pid": "71",
+      "position": {
+        "x": "2461.0000000000005",
+        "y": "1366.6666666666667"
+      }
+    },
+    {
+      "text": "What are you doing? This is not part of the game. Please stop pressing the 8 key and get back to confronting the Evil Death Man.\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
+      "name": "Press the 8 key",
+      "pid": "72",
+      "position": {
+        "x": "2592.666666666667",
+        "y": "1378.3333333333337"
+      }
+    },
+    {
+      "text": "You climb up the ladder to find yourself in a fairly spacious room. The walls are made of a deep wood, and the floor of white tile. Cabinets, drawers, and tables line the edges of the room. In the middle of the room is a desk with a nameplate reading \"Evil Death Man\" on it.\n\nWait, what? How did you end up in the Evil Death Man's room? You look out the window. You're pretty much at ground level. How did you end up here while only ever going upwards?\n\nThe leather chair spins around to reveal the Evil Death Man glaring at you, but you're too confused to be afraid of her right now.\n\n[[Confront the Evil Death Man->Confront the Evil Death Man Ladder]]",
+      "links": [
+        {
+          "name": "Confront the Evil Death Man",
+          "link": "Confront the Evil Death Man Ladder",
+          "pid": "77"
+        }
+      ],
+      "name": "Evil Death Man Room Ladder",
+      "pid": "73",
+      "position": {
+        "x": "911.0000000000001",
+        "y": "1816.666666666667"
+      }
+    },
+    {
+      "text": "\"Hello, Evil Death Man. I've got some concerns I would like to talk with you about.\"\n\n\"Of course,\" the Evil Death Man says, \"Have a seat.\" A chair materializes across from her. You get in the seat.\n\n[[Express your concerns]]",
+      "links": [
+        {
+          "name": "Express your concerns",
+          "link": "Express your concerns",
+          "pid": "75"
+        }
+      ],
+      "name": "Confront the Evil Death Man",
+      "pid": "74",
+      "position": {
+        "x": "376",
+        "y": "1535"
+      }
+    },
+    {
+      "text": "\"I'm a health worker from City Hall, and I'm here to inform you that the Lair of the Evil Death Man Nonprofit Organization is violating a bunch of health and safety regulations.\" You produce a bunch of papers from your bag.\n\"No.\" The Evil Death Man says.\n\"What?\"\n\"No.\" She repeats. She then presses a button on her desk. A huge door opens in the wall, and a giant furry blobbish monster wiggles out.\n\"This guy really likes sugar, and there's quite a lot in the human body,\" the Evil Death Man says as her chair descends into the floor.\n\"WHAT\"\n\nThe monster eats you. Oh no.\n\nGAME OVER",
+      "name": "Express your concerns",
+      "pid": "75",
+      "position": {
+        "x": "376",
+        "y": "1701.6666666666665"
+      }
+    },
+    {
+      "text": "\"I'm a health worker from City Hall, and I'm here to inform you that the Lair of the Evil Death Man Nonprofit Organization is violating a bunch of health and safety regulations.\" You produce a bunch of papers from your bag.\n\"No,\" says the Evil Death Man.\n\"What?\"\n\"No,\" she repeats. She then presses a button on her desk. A huge door opens in the wall, and a giant furry blobbish monster wiggles out.\n\"This guy really likes sugar, and there's quite a lot in the human body,\" the Evil Death Man says as her chair descends into the floor.\n\n[[%need:SUGAR_CANE;Toss the sugar cane to the monster!]]\n[[Freak out]]\n",
+      "links": [
+        {
+          "name": "%need:SUGAR_CANE;Toss the sugar cane to the monster!",
+          "link": "%need:SUGAR_CANE;Toss the sugar cane to the monster!",
+          "pid": "78"
+        },
+        {
+          "name": "Freak out",
+          "link": "Freak out",
+          "pid": "79"
+        }
+      ],
+      "name": "Express Your Concerns Ladder",
+      "pid": "76",
+      "position": {
+        "x": "911.0000000000001",
+        "y": "2096.666666666667"
+      }
+    },
+    {
+      "text": "\"...Hello, Evil Death Man. I've got some concerns I would like to talk with you about.\"\n\n\"Of course,\" the Evil Death Man says, \"Have a seat.\" A chair materializes across from her. You get in the seat.\n\n[[Express Your Concerns->Express Your Concerns Ladder]]",
+      "links": [
+        {
+          "name": "Express Your Concerns",
+          "link": "Express Your Concerns Ladder",
+          "pid": "76"
+        }
+      ],
+      "name": "Confront the Evil Death Man Ladder",
+      "pid": "77",
+      "position": {
+        "x": "911.0000000000001",
+        "y": "1966.666666666667"
+      }
+    },
+    {
+      "text": "You toss the sugar cane to the monster. You quickly snag the regulation papers off the desk, and hop down the hole the Evil Death Man descended down to before it closes.\n\nYou and the Evil Death Man are now both in a barren room. They are trapped in here with you.\n\nYou begin reading off all of the health and safety violations to her.\n\n\"For one, the building is so tall that it violates airspace regulations AND it permeates low-earth-orbit, so it's at risk of collision with a satellite.\"\n\n\"Another thing, and I saw this myself while I was in the elevator, your elevators don't have an emegency button! In fact, they don't even have DOOR OPEN or DOOR CLOSE.\"\n\n\"Thirdly, we have recieved reports that your bathroom is not handicap accessible.\"\n\nEventually, you make it through your whole spiel, and your job is done. You leave the premises of the Lair of the Evil Death Man Nonprofit Organization, and go home to enjoy some well-earned noodles.\n\nYOU WIN",
+      "name": "%need:SUGAR_CANE;Toss the sugar cane to the monster!",
+      "pid": "78",
+      "position": {
+        "x": "836.0000000000001",
+        "y": "2246.666666666667"
+      }
+    },
+    {
+      "text": "You begin freaking out, and the monster eats you.\n\nGAME OVER",
+      "name": "Freak out",
+      "pid": "79",
+      "position": {
+        "x": "986.0000000000001",
+        "y": "2246.666666666667"
       }
     }
   ],
   "name": "01 Interactive Fiction",
   "startnode": "1",
-  "creator": "Twine",
+  "creator": "Aidan Lesh",
   "creator-version": "2.3.12",
   "ifid": "B56756B1-1267-4ACC-91DA-B1B7DACF4826"
 }
