@@ -3102,7 +3102,14 @@
       }
     },
     {
-      "text": "Double-click this passage to edit it.",
+      "text": "You insert the mouse into the machine, and the machine turns into a live rodent mouse!%remove:MOUSE;%give:RODENT_MOUSE;\n\n[[Next->Go to The Homonymifier]]",
+      "links": [
+        {
+          "name": "Next",
+          "link": "Go to The Homonymifier",
+          "pid": "39"
+        }
+      ],
       "name": "Insert USB mouse",
       "pid": "57",
       "position": {

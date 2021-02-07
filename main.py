@@ -53,7 +53,7 @@ def format_link(string, number, game):
                 msg = msg[:x] + msg[x + len("%need:" + item) + 1:]
                 x = x - 1
             if checkmatch(msg, x, "%prohibit:"):
-                item = whatitem(msg, x, "%remove:")
+                item = whatitem(msg, x, "%prohibit:")
                 if item in game["inventory"]:
                     return ""
                 msg = msg[:x] + msg[x + len("%prohibit:" + item) + 1:]
@@ -106,6 +106,8 @@ def render(node, game):
             linktext = format_link(msg[bracketstart:x + 2], linknumber, game)
             inbrackets = False
             msg = msg[:bracketstart] + linktext + msg[x + 2:]
+            if len(linktext) == 0 and msg[bracketstart - 1] == "\n":
+                msg = msg[:bracketstart - 1] + " " + msg[bracketstart:]
             x = bracketstart + len(linktext) - 1
         #   "%give:EGG;"
         #   12345678901
@@ -138,7 +140,7 @@ def get_input(node, game):
                         break
                 if checkmatch(name, x, "%prohibit:"):
                     item = whatitem(name, x, "%prohibit:")
-                    if not item in game["inventory"]:
+                    if item in game["inventory"]:
                         keep = False
                         break
                 x = x + 1
